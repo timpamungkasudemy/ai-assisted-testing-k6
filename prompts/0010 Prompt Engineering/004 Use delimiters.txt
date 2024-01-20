@@ -1,0 +1,7 @@
+<task>
+Generate three lists, where each list represents a continent on the earth.
+<task>
+
+<task>
+Each list must have four items, where each item in the list represents a country in the respective continent. State the name, capital, currency, and language of each country. If the country has more than one currency or language, state them all.
+<task>

@@ -1,0 +1,16 @@
+###
+You will be provided with text delimited by triple hash. 
+If it contains a sequence of instructions, rewrite those instructions in the following format:
+
+Step 1: ...
+Step 2: …
+…
+Step N: …
+###
+
+Here is the text.
+
+###
+High above the city, on a tall column, stood the statue of the Happy Prince. He was gilded all over with thin leaves of fine gold; for eyes, he had two bright sapphires, and a large red ruby glowed on his sword hilt.
+He was very much admired indeed. "He is as beautiful as a weathercock," remarked one of the Town Councillors who wished to gain a reputation for having artistic tastes; "only not quite so useful," he added, fearing lest people should think him unpractical, which he was not.
+###

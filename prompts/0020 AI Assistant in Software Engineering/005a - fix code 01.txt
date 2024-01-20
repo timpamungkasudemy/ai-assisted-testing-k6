@@ -1,0 +1,11 @@
+What is wrong with this code? I expect the sum of even numbers, but it shows the wrong value.
+
+###
+total = 0
+
+for num in range(0, 10):
+    if num % 2 == 0:
+        total += num
+
+print("Total sum of even numbers is", num)
+###

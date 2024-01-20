@@ -1,0 +1,35 @@
+Create test cases for the following user story and the acceptance criteria. The test must include positive test case (happy path) and negative test cases (not happy path, e.g. error)
+<story>
+As a user, I want to enter and store contact information. Each contact information includes the contact's name, phone number, and email address.
+<story>
+<acceptance-criteria>
+### User interface
+The input fields should have appropriate labels to indicate the type of information to be entered.
+###
+### Mandatory fields
+The contact's name is mandatory.
+At least one phone number or one email must exist. If a contact already has a phone number, it does not need email, and vice versa.
+###
+### Field validation
+Contact name: maximum 200 characters, and can be any characters.
+Phone number: number only, maximum 50 characters.
+Email: must be a valid email format, maximum of 200 characters.
+Contact names are unique; there can be no contact with two exact names. This uniqueness includes whitespace and non-alphanumeric characters.
+Each contact name can have more than one phone number.
+Each contact name can have more than one email.
+###
+### Saving new contact
+There is an "Add Contact" button that becomes active only when all required fields (name, phone number, and email) are filled in correctly. Upon clicking "Add Contact," the entered information is saved.
+###
+### Viewing and editing contacts
+After saving, I should be able to see the contacts in the contact list with their name displayed as the label.
+I can click on a contact to view their detailed information, showing their name, phone numbers, and emails.
+There should be an option to edit the contact's information, including name, phone number, or email.
+There should be an option to add or delete the phone number or email.
+###
+### Deleting contacts
+I can click on an existing contact.
+A "Delete contact" button exists to delete the contact's information, including name, phone number, or email.
+Upon clicking the "Delete contact" button, a confirmation dialog must be shown, and the contact must be deleted if I confirm the deletion.
+###
+<acceptance-criteria>

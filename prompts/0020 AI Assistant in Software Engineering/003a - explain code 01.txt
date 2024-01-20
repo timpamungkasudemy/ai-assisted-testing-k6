@@ -1,0 +1,21 @@
+What does this code do, and what programming language is used?
+
+###
+package main
+
+import "fmt"
+
+func doSomething(count int) []int {
+	num := []int{1, 1}
+	for len(num) < count {
+		nextNumber := num[len(num)-1] + num[len(num)-2]
+		num = append(num, nextNumber)
+	}
+	return num[:count]
+}
+
+func main() {
+	something := doSomething(10)
+	fmt.Println("Result is:", something)
+}
+###

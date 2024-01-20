@@ -1,0 +1,23 @@
+refactor this code using java lambda
+
+###
+	public static void main(String[] args) {
+		var list = new ArrayList<Double>();
+		for (int i = 0; i < 20; i++) {
+			list.add(ThreadLocalRandom.current().nextDouble(-100, 100));
+		}
+
+		var totalPositive = 0d;
+		var totalNegative = 0d;
+		for (int i = 0; i < list.size(); i++) {
+			if (list.get(i) > 0) {
+				totalPositive = totalPositive + list.get(i);
+			} else if (list.get(i) < 0) {
+				totalNegative = totalNegative + list.get(i);
+			}
+		}
+
+		System.out.println(list);
+		System.out.printf("Total positive: %f, and total negative: %f", totalPositive, totalNegative);
+	}
+###

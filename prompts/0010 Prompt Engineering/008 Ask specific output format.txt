@@ -1,0 +1,29 @@
+###
+You will be given a paragraph containing the car manufacturer, model, fuel type, and manufacturer year.
+###
+
+###
+For each car in the list, convert them as SQL insert statements to PostgreSQL database.
+The table name is "cars".
+The table columns are 
+  - car_id (data type UUID, randomly generated)
+  - manufacturer
+  - model
+  - fuel_type (FOSSIL / ELECTRIC / HYBRID)
+  - manufacture_year (integer)
+  - created_at (timestamp with timezone), give the current timestamp for this column
+###
+
+###
+Use PostgreSQL gen_random_uuid() to generate UUID.
+Use PostgreSQL current_timestamp to generate current timestamp.
+###
+
+Here is the paragraph.
+
+###
+A Toyota Pegasus type R has 180 HP and is powered by gasoline. This kind of beast started being manufactured in 2022 in Japan. The one introduced in the event is its second generation, which has an even more beautiful look.
+The Honda Magma was also introduced at the event. This fully electric car has 170 HP power and was just manufactured in 2023.
+If you are not a fossil fuel or full electric fan, try to watch the Hyundai Zaphir introduced in 2023. Unlike most cars, this one can use both fuel and electricity as its power source.
+###
+

@@ -1,0 +1,7 @@
+--- 
+Write code that asks a string as input, and calculate how many times each alphabet appears in the string.
+---
+
+---
+Write the code in Python, Java, and PHP
+---

@@ -1,0 +1,1 @@
+Give me the five first multiples of 15 and their factors in JSON format. For each multiple, show how many counts of even factor and odd factor. Use snake case for the JSON attribute names.

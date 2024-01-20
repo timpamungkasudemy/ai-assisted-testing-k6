@@ -1,0 +1,1 @@
+Create a python application that shows a multiplication table of 1 to 10

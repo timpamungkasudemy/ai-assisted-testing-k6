@@ -1,0 +1,14 @@
+simplify this python code
+
+###
+print("Number is ", 1)
+print("Number is ", 3)
+print("Number is ", 5)
+print("Number is ", 7)
+print("Number is ", 9)
+print("Number is ", 11)
+print("Number is ", 13)
+print("Number is ", 15)
+print("Number is ", 17)
+print("Number is ", 19)
+###

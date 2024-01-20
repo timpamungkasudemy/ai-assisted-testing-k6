@@ -1,0 +1,7 @@
+Generate sample test data from the following user story. Give the test data in JSON lines format, where each line represents one data.
+Generate 10 sample data.
+<story>
+As an e-commerce user, I'd like to pay using a credit card. The credit card issuer can be Visa or Mastercard. I must enter the following: credit card number, cardholder name, CVV, and amount to be paid.
+The currency code will always be USD.
+If the amount to be paid is over 100 USD, I can choose whether to pay in full (without a loan) or use a loan with a 3 / 6 / 9 / 12 months tenure.
+</story>

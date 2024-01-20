@@ -1,0 +1,11 @@
+Generate 20 sample test data for entering contact information. The output must be in JSON format. 
+The JSON has the following fields and criteria:
+ - 'contact_name': Represents person or company name. A valid value contains an ASCII character with 1-200 characters.
+ - 'phone_number': Represents phone number, including country code. A valid value contains only numerics between 1-100 characters.
+ - 'email': A valid value contains a valid email format with a maximum of 200 characters.
+ - 'type': set to POSITIVE if all 'contact_name', 'phone_number', and 'email' contains valid values. Set to NEGATIVE if one of the fields contains an invalid value.
+ - 'invalid_field': if the 'type' is NEGATIVE, inform which field is invalid and why it is invalid.
+
+For contact_name, email and phone_number, make data that mimic real-world data.
+Show all 20 sample data in the output.
+

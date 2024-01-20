@@ -1,0 +1,9 @@
+Generate a K6 test script with five fixed users. The script should run for 5 minutes and test the following endpoint.
+```
+curl -L 'https://api.mycompany.com/extract-data/v3/passport' -H 'Content-Type: application/json' -d '{
+    "image_base64": "<base64-image>"
+}'
+```
+The expected metrics are:
+response status code is 200
+P95 response time is less than 1 second

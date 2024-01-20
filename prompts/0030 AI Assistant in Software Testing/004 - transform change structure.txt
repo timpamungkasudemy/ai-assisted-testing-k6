@@ -1,0 +1,32 @@
+###
+I have the following chat between <chat>..</chat>.
+###
+<chat>
+Me: Hi @John. Can you send several item samples for our inventory system testing?
+John Doe: Sure. What kind of item sample?
+Me: I need item name, manufacturer, type (I think this is frozen, fresh food, etc), price, and barcode
+John Doe: How many data you need?
+Me: Around 5-10 is good
+John Doe: OK, here they are
+John Doe: We have Golio chococheese banana, manufactured by Lion Food. It's frozen food, $3 each. The barcode is 4982785790. Then, also from Lion food, we have Simba hazelnut dark chocolate 70%, it is packed food with barcode 9582900195 and the price is 4.4 USD
+John Doe: From Jammin Inc, we have Jammin Strawberry premium Jam, 6 USD, packed food. The barcode is 1927750285. Another jam is the Jammin Chocolate premium jam, 8 USD packed food with barcode 2958001858. They also provides us with several fresh products: Honey Murcoff orange, the price is USD 5 per kilogram, barcode 9067295781, and Sky rock melon, the price is USD 2 per kilogram
+John Doe: Here is another one sample for Yoga Food : "Chick-it-now" Frozen raw chicken, price is 6 USD, frozen food, barcode 1960659927
+Me: Thanks John
+John Doe: Anytime
+</chat>
+### Step 1
+Extract the items stated in the chat. Each item will contain the item name, price (in USD), barcode, manufacturer, and item type (frozen/packed/fresh)
+###
+### Step 2
+Convert each item to an SQL statement that inserts into the PostgreSQL table "products." The "items" table has the following fields:
+<field>product_id : random UUID</field>
+<field>product_name: this should be the item name, all uppercase</field>
+<field>manufacturer_name: this should be the manufacturer name, all uppercase</field>
+<field>price: this should be the item price, rounded to two decimals</field>
+<field>barcode: this should be the item barcode, all uppercase</field>
+<field>item_type: this should be the item type (FROZEN / FRESH / PACKED / OTHER), all uppercase</field>
+###
+### Step 3
+Give me all the SQL insert statements as output and nothing else.
+###
+

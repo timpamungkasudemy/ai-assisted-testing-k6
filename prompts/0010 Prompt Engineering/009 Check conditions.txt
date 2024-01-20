@@ -1,0 +1,15 @@
+###
+You will be provided with text delimited by triple hash. 
+If it contains a sequence of instructions, rewrite those instructions in the following format:
+
+Step 1: ...
+Step 2: …
+…
+Step N: …
+###
+
+Here is the text.
+
+###
+To prepare instant noodles with egg, boil water in a pot or kettle. Once the water is boiling, add the instant noodles to the pot and cook according to the package instructions, usually for 2-4 minutes. In the last minute of cooking, crack an egg directly into the pot with the noodles. Allow the egg to poach in the simmering broth, ensuring the yolk remains slightly runny for a creamy consistency. If you prefer a fully cooked egg, you can break the yolk and stir it into the noodles. Season the noodles with the provided flavor packet or customize the taste with your preferred condiments, such as soy sauce or hot sauce. Once the noodles are cooked to your liking, remove the pot from the heat and serve the delicious instant noodles with the poached egg for an added protein boost and extra richness.
+###

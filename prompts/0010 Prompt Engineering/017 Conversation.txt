@@ -1,0 +1,49 @@
+I will give you a text to be analyzed.
+
+
+
+
+
+Once upon a time, there was a dear little girl loved by everyone who looked at her, but most of all by her grandmother, and there was nothing she would not have given to the child. Once, she gave her a little cap of red velvet, which suited her so well that she would never wear anything else. So, she was always called Little Red Riding Hood.
+One day, her mother told her, "Come, Little Red Riding Hood, here is a piece of cake and a bottle of wine. Take them to your grandmother, she is ill and weak, and they will do her good. Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path, or you may fall and break the bottle, and then your grandmother will get nothing. And when you enter her room, don't forget to say good-morning, and don't peep into every corner before you do it."
+I will take great care, said Little Red Riding Hood to her mother and gave her hand on it.
+The grandmother lived out in the woods, half a league from the village, and just as Little Red Riding Hood entered the woods, a wolf met her. Little Red Riding Hood did not know what a wicked creature he was and was not afraid of him.
+
+
+
+
+
+Summarize the given text in a maximum of 100 words.
+
+
+
+
+
+Extract all nouns, verbs, and adjectives from the given text and put each in an array.
+
+
+
+
+
+Remove duplicate values from each array.
+
+
+
+
+
+Sort each array alphabetically in ascending order.
+
+
+
+
+
+Convert the output to JSON format like this.
+The attribute "summary" contains the full summarized text you gave earlier.
+The attributes "nouns", "verbs", and "adjectives" contain the array you gave earlier, which does not have a duplicate and is already sorted.
+
+{
+  "summary": "..."
+   "nouns" :[ "a", "b"],
+   "verbs" :[ "c", "d"],
+   "adjectives" :[ "e", "f"]
+}

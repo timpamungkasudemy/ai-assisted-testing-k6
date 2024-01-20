@@ -1,0 +1,18 @@
+What does this code do, and what programming language is used?
+
+###
+public class WhatAmI {
+	private static Scanner scanner = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		System.out.print("Enter a string: ");
+		var input = scanner.nextLine().replaceAll("\\s", "").toUpperCase();
+		var map = new TreeMap<Character, Integer>();
+		for (char c : input.toCharArray()) {
+			map.put(c, map.getOrDefault(c, 0) + 1);
+		}
+		System.out.println(map);
+	}
+
+}
+###

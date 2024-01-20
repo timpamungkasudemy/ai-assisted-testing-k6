@@ -1,0 +1,11 @@
+What is wrong with this code? I expect to see the output that does not contain duplicate strings, but I still get duplicate values.
+
+###
+	public static void main(String[] args) {
+		var list = List.of("Eleven", "game", "Apple", "Christmas", "Butter", "Flip", "House", "Game", "Dog", "Jam", "apple", "dog", "Icon");
+
+		var modifiedList = list.stream().distinct().sorted().collect(Collectors.toList());
+
+		System.out.println(modifiedList);
+	}
+###

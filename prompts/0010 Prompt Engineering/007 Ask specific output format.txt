@@ -1,0 +1,2 @@
+List all Southeast Asian countries, along with their capital and main currency. Make your output in a sentence like this: 
+"Country X, which is located in Southeast Asia, has capital Y and currency Z."

@@ -1,0 +1,1 @@
+write a java application that shows numbers 1 to 10 to terminal
