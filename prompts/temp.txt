@@ -1,0 +1,386 @@
+I have this table
+
+###
+CREATE TABLE products (
+  product_uuid UUID DEFAULT random_uuid(),
+  name TEXT NOT NULL,
+  manufacturer TEXT,
+  base_price DOUBLE PRECISION NOT NULL,
+  description TEXT,
+  stock_keeping_unit TEXT NOT NULL UNIQUE,
+  active BOOLEAN NOT NULL DEFAULT FALSE,
+  created_by TEXT NOT NULL,
+  updated_by TEXT NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+###
+
+Generate insert statements for 30 realistic data.
+For the product name, focus on food & beverages.
+Make sure the `name` is unique.
+For the `product_id`, hardcode a unique UUID for each data.
+No need to insert `created_at`, and `updated_at`.
+For the `created_by` and `updated_by`, use "administrator".
+For the `stock_keeping_unit`, make sure they are unique.
+For the `description`, generate a realistic description.
+For the `base_price`, make a random value between 1 and 99, with decimals one of .0, .25, .75, or .99
+
+Show all of the statements for output.
+
+
+
+
+
+
+
+
+
+
+
+delete  from products;
+
+INSERT INTO
+  products (
+    product_uuid,
+    name,
+    manufacturer,
+    base_price,
+    description,
+    stock_keeping_unit,
+    active,
+    created_by,
+    updated_by
+  )
+VALUES
+  (
+    'd961c1ff-0580-4f49-9b65-463e9ed63652',
+    'Chocolate Bar',
+    'Nestle',
+    2.99,
+    'Delicious milk chocolate bar',
+    'SKU12318',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'fae9a72c-13fc-4b3a-b69a-6790a61c2a9a',
+    'Soda',
+    'Coca-Cola',
+    1.99,
+    'Refreshing carbonated drink',
+    'SKU67190',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'b70b31ca-777e-4a9b-8489-2b3017429f9c',
+    'Potato Chips',
+    'Lays',
+    3.49,
+    'Crispy potato chips',
+    'SKU23456',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '4de5e4a3-1d2f-45a3-836b-d709c44c6549',
+    'Bottled Water',
+    'Aquafina',
+    1.25,
+    'Purified drinking water',
+    'SKU72901',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'f77b3c18-7610-4d9c-b207-985d6821f295',
+    'Granola Bar',
+    'Nature Valley',
+    2.49,
+    'Healthy snack bar with oats',
+    'SKU34247',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '4cc30da0-5ea4-44e5-ae49-42b3e6ea6e52',
+    'Orange Juice',
+    'Tropicana',
+    3.99,
+    '100% pure squeezed orange juice',
+    'SKU90126',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '70ffdbef-7c19-4b8d-ae8e-21b99d667b2f',
+    'Pizza',
+    'DiGiorno',
+    9.99,
+    'Frozen pepperoni pizza',
+    'SKU45298',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'cb6c7f27-b76f-472a-bc50-3b79e8b8f93b',
+    'Yogurt',
+    'Chobani',
+    1.79,
+    'Greek yogurt with mixed berries',
+    'SKU06341',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '78126a03-d6bf-4b26-a0a0-7c87923b1ea6',
+    'Cereal',
+    'Kelloggs',
+    4.49,
+    'Crunchy cornflakes cereal',
+    'SKU56229',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '7f5a801c-49db-4af1-8a13-9b7e09d33b12',
+    'Ice Cream',
+    'Ben & Jerrys',
+    5.99,
+    'Chunky Monkey flavor ice cream',
+    'SKU28003',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '081176d5-17eb-44f7-aa1a-46581c7df92d',
+    'Pasta',
+    'Barilla',
+    1.49,
+    'Spaghetti pasta',
+    'SKU71501',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '9e0df34c-46b2-452f-9e5f-33c1bfe475e2',
+    'Coffee',
+    'Starbucks',
+    7.49,
+    'Premium ground coffee',
+    'SKU30557',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '16ee13eb-7529-41a9-8b1f-3c986e0d4f90',
+    'Tea',
+    'Tazo',
+    2.99,
+    'Black tea with exotic spices',
+    'SKU94423',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '9b29cf8e-5e3a-4b03-8e87-8dd5558af40d',
+    'Bread',
+    'Wonder',
+    2.29,
+    'White sandwich bread',
+    'SKU45105',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '25e7eaa7-3c0e-4ba0-81ce-8e836f53e586',
+    'Apples',
+    'Washington Apples',
+    1.49,
+    'Fresh red apples',
+    'SKU90024',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'e4a1d9dd-b9b3-45c7-b9ea-86bb12a26a82',
+    'Hamburger Patties',
+    'Angus Beef',
+    6.99,
+    '100% Angus beef patties',
+    'SKU67195',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'd9d0019b-7c1c-43ec-b3a1-9f0c6f33757b',
+    'Salad Dressing',
+    'Hidden Valley',
+    3.25,
+    'Ranch salad dressing',
+    'SKU85028',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'd144db0c-06b5-4f7c-b6ae-7f8f30597a22',
+    'Cheddar Cheese',
+    'Kraft',
+    2.75,
+    'Sharp cheddar cheese block',
+    'SKU78901',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '990b56c5-9e33-4eab-9d6c-46a5c7d7d864',
+    'Hot Dogs',
+    'Oscar Mayer',
+    3.99,
+    'All-beef hot dog pack',
+    'SKU34512',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'f9995a5a-4d12-4e32-91f0-4d85c442e0e6',
+    'Lemonade',
+    'Minute Maid',
+    2.49,
+    'Frozen lemonade concentrate',
+    'SKU90723',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '86cc1637-0ce0-416c-b7dd-1e101aaf43e0',
+    'Peanut Butter',
+    'Jif',
+    2.99,
+    'Creamy peanut butter',
+    'SKU12311',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '4e97d3a2-5c32-48a1-8b3a-69491a3b35ec',
+    'Toothpaste',
+    'Colgate',
+    1.99,
+    'Fluoride toothpaste',
+    'SKU01769',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '36c67d09-4e3e-4a92-8f90-d5c3c2265f7e',
+    'Shampoo',
+    'Pantene',
+    4.49,
+    'Moisturizing shampoo',
+    'SKU23455',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'dd747a24-2c7b-45cf-8a5a-521f3155c67d',
+    'Conditioner',
+    'Herbal Essences',
+    4.49,
+    'Volumizing hair conditioner',
+    'SKU01901',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    '3a0e4e6e-9a12-4eb6-9d1c-7eb9a0b534d6',
+    'Soap',
+    'Dove',
+    1.79,
+    'Gentle beauty bar soap',
+    'SKU45671',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'efcdaaaa-3b57-4ccf-a08e-59787bfad0a6',
+    'Milk',
+    'DairyPure',
+    2.49,
+    'Fresh whole milk',
+    'SKU12197',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'fe71be5c-0b21-4b5b-b8f0-3eaa4f61e4a9',
+    'Eggs',
+    'Farm Fresh',
+    1.99,
+    'Grade A large eggs',
+    'SKU46890',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'f3a9cecb-b1f9-4d41-bc9e-17a1f06fde17',
+    'Canned Soup',
+    'Campbells',
+    2.25,
+    'Chicken noodle soup',
+    'SKU20456',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'c1e48403-d272-4a09-8746-8af0b3ed4394',
+    'Cereal Bars',
+    'Quaker',
+    2.99,
+    'Oatmeal breakfast bars',
+    'SKU20173',
+    true,
+    'administrator',
+    'administrator'
+  ),
+  (
+    'c2be2be3-7992-4d2f-8f58-9643f3c0209e',
+    'Sliced Bread',
+    'Sara Lee',
+    2.49,
+    'Wheat bread for sandwiches',
+    'SKU64967',
+    true,
+    'administrator',
+    'administrator'
+  );
+
