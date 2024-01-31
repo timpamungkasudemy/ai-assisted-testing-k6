@@ -1,15 +1,15 @@
-import http from 'k6/http';
-import exec from 'k6/execution';
-import { sleep } from 'k6';
 import { randomIntBetween } from "https://jslib.k6.io/k6-utils/1.1.0/index.js";
+import { sleep } from 'k6';
+import exec from 'k6/execution';
+import http from 'k6/http';
 
-// export let options = {
+// export const options = {
 //     vus: 10,
 //     duration: '5m',
 //     iterations: 50,
 // };
 
-export let options = {
+export const options = {
     stages: [
         { duration: '5m', target: 1 }, // 1 user at the start
         { duration: '5m', target: 20 }, // 5 minutes after the start, there should be 20 users
@@ -23,8 +23,8 @@ export let options = {
 
 export default function () {
     http.get('https://www.google.com');
-    
-    let durationInSecond = (exec.instance.currentTestRunDuration / 1000).toFixed(2);
+
+    const durationInSecond = (exec.instance.currentTestRunDuration / 1000).toFixed(2);
 
     console.log(`Iteration: ${exec.scenario.iterationInTest}, VU: ${exec.vu.idInTest}, 
     Script has been running for ${durationInSecond} seconds`);
