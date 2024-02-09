@@ -1,0 +1,11 @@
+{
+    "thresholds": {
+        "checks": [
+            {
+                "threshold": "rate == 1",
+                "abortOnFail": true,
+                "delayAbortEval": "10s"
+            }
+        ]
+    }
+}
