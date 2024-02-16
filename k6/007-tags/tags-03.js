@@ -5,6 +5,7 @@ const BASE_URL = 'http://localhost:8888/alphamart';
 
 export default function () {
     http.get(`${BASE_URL}/api/basic/slow-if-error`);
+    http.get(`${BASE_URL}/api/basic/fast-random`);
 
     sleep(1);
 }

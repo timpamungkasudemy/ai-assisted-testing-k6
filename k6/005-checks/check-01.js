@@ -10,7 +10,7 @@ export default function () {
     'response status code is 2xx': (r) => r.status >= 200 && r.status < 300,
     'response duration < 500ms': (r) => r.timings.duration < 500,
     'response body contains field "message" and is not an empty string':
-      (r) => r.body !== '' && r.json.message !== '',
+      (r) => r.body !== '' && r.json().message !== '',
   });
 
   sleep(1);

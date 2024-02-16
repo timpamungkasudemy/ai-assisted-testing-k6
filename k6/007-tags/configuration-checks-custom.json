@@ -1,0 +1,15 @@
+{
+    "vus": 20,
+    "duration": "5s",
+    "thresholds": {
+        "checks{check-case: response-is-2xx}": [
+            "rate >= 0.99"
+        ],
+        "checks{check-case: x-boolean-is-true}": [
+            "rate >= 0.5"
+        ],
+        "checks{check-case: message-field-not-empty}": [
+            "rate == 1"
+        ]
+    }
+}

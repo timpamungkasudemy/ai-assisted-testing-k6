@@ -10,7 +10,7 @@ export default function () {
   url.searchParams.append('name', nameToSearch);
 
   const response = http.get(url.toString());
-  const customers = JSON.parse(response.body);
+  const customers = response.json();
 
   check(customers, {
     'All customers have a full name': (c) => {

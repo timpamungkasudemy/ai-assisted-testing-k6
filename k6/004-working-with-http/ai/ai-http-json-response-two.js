@@ -4,7 +4,9 @@ import http from 'k6/http';
 const BASE_URL = 'http://localhost:8888/alphamart';
 
 export default function () {
-    http.get(`${BASE_URL}/api/basic/slow-if-error`);
+    let response = http.get(`${BASE_URL}/api/customer/fake`, {
+        headers: { 'Accept': 'application/json' },
+    });
 
     sleep(1);
 }
