@@ -1,4 +1,4 @@
-import { calculateMonthlyInstallment } from 'https://gist.github.com/timpamungkasudemy/292cd95b4cc70d9581553a8fac1bbba9';
+import { calculateMonthlyInstallment } from 'https://raw.githubusercontent.com/timpamungkasudemy/ai-assisted-testing-k6/main/js/loan.js';
 import { check, sleep } from 'k6';
 import http from 'k6/http';
 
