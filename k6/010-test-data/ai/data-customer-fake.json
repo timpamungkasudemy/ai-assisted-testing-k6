@@ -1,0 +1,102 @@
+[
+    {
+        "email": "john.doe@example.com",
+        "firstName": "John",
+        "lastName": "Doe"
+    },
+    {
+        "email": "jane.smith@example.com",
+        "firstName": "Jane",
+        "lastName": "Smith"
+    },
+    {
+        "email": "michael.jackson@example.com",
+        "firstName": "Michael",
+        "lastName": "Jackson"
+    },
+    {
+        "email": "sarah.jones@example.com",
+        "firstName": "Sarah",
+        "lastName": "Jones"
+    },
+    {
+        "email": "robert.johnson@example.com",
+        "firstName": "Robert",
+        "lastName": "Johnson"
+    },
+    {
+        "email": "emily.williams@example.com",
+        "firstName": "Emily",
+        "lastName": "Williams"
+    },
+    {
+        "email": "david.brown@example.com",
+        "firstName": "David",
+        "lastName": "Brown"
+    },
+    {
+        "email": "jessica.miller@example.com",
+        "firstName": "Jessica",
+        "lastName": "Miller"
+    },
+    {
+        "email": "william.taylor@example.com",
+        "firstName": "William",
+        "lastName": "Taylor"
+    },
+    {
+        "email": "olivia.white@example.com",
+        "firstName": "Olivia",
+        "lastName": "White"
+    },
+    {
+        "email": "charles.anderson@example.com",
+        "firstName": "Charles",
+        "lastName": "Anderson"
+    },
+    {
+        "email": "elizabeth.thomas@example.com",
+        "firstName": "Elizabeth",
+        "lastName": "Thomas"
+    },
+    {
+        "email": "alexander.harris@example.com",
+        "firstName": "Alexander",
+        "lastName": "Harris"
+    },
+    {
+        "email": "samantha.wilson@example.com",
+        "firstName": "Samantha",
+        "lastName": "Wilson"
+    },
+    {
+        "email": "matthew.martin@example.com",
+        "firstName": "Matthew",
+        "lastName": "Martin"
+    },
+    {
+        "email": "amanda.moore@example.com",
+        "firstName": "Amanda",
+        "lastName": "Moore"
+    },
+    {
+        "email": "daniel.thompson@example.com",
+        "firstName": "Daniel",
+        "lastName": "Thompson"
+    },
+    {
+        "email": "madison.young@example.com",
+        "firstName": "Madison",
+        "lastName": "Young"
+    },
+    {
+        "email": "jacob.davis@example.com",
+        "firstName": "Jacob",
+        "lastName": "Davis"
+    },
+    {
+        "email": "emma.lee@example.com",
+        "firstName": "Emma",
+        "lastName": "Lee"
+    }
+]
