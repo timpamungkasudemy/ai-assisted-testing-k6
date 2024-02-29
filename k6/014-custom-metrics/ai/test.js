@@ -1,10 +1,11 @@
 import { sleep } from 'k6';
 import http from 'k6/http';
-import { Trend } from 'k6/metrics';
+import { Rate } from 'k6/metrics';
+
+// Define the custom metric
+let errorRate = new Rate('custom_error');
 
 const BASE_URL = 'http://localhost:8888/alphamart';
-
-let batchResponseTimeTrend = new Trend('batch_response_time', true);
 
 export default function () {
     let customer = {
@@ -27,16 +28,23 @@ export default function () {
     let responses = http.batch(
         [
             ['GET', `${BASE_URL}/api/basic/fast`],
-            ['GET', `${BASE_URL}/api/basic/custom-delay?delay=2000&identifier=custom-delay-1`],
+            ['GET', `${BASE_URL}/api/basic/fast-random`],
             ['POST', `${BASE_URL}/api/customer/fake`, JSON.stringify(customer), postParams],
-            ['GET', `${BASE_URL}/api/basic/custom-delay?delay=2000&identifier=custom-delay-2`],
-            ['GET', `${BASE_URL}/api/basic/custom-delay?delay=2000&identifier=custom-delay-3`],
+            ['GET', `${BASE_URL}/api/basic/fast-random`],
+            ['GET', `${BASE_URL}/api/basic/fast-random`],
         ]
     );
 
-    // retrieve the longest response time
-    let longestResponseTime = Math.max(...responses.map((res) => res.timings.duration));
-    batchResponseTimeTrend.add(longestResponseTime);
+    // Iterate over the responses
+    for (let res of responses) {
+        // Check if the status code is 4xx or 5xx
+        if (res.status >= 400 && res.status < 600) {
+            errorRate.add(true);
+        }
+        else {
+            errorRate.add(false);
+        }
+    }
 
     sleep(1);
 }

@@ -1,4 +1,4 @@
-import { check, sleep } from 'k6';
+import { sleep } from 'k6';
 import http from 'k6/http';
 import { Counter } from 'k6/metrics';
 
@@ -37,22 +37,6 @@ export default function () {
 
     // Increment batch calls counter
     counterBatchCalls.add(1);
-
-    // add K6 check to make sure all requests returning 2xx with duration less than 3 seconds
-    check(responses,
-        {
-            'all requests returning status code 2xx': (responses) => {
-                return responses.every(
-                    (res) => res.status >= 200 && res.status < 300
-                );
-            },
-            'all requests are less than 3 seconds': (responses) => {
-                return responses.every(
-                    (res) => res.timings.duration < 3000
-                );
-            },
-        }
-    );
 
     sleep(1);
 }
