@@ -1,0 +1,13 @@
+{
+    "thresholds": {
+        "group_duration{group:::basic calls}": [
+            "p(95)<100"
+        ],
+        "group_duration{group:::basic calls::basic fast calls}": [
+            "p(95)<100"
+        ],
+        "group_duration{group:::customer calls}": [
+            "p(95)<100"
+        ]
+    }
+}
